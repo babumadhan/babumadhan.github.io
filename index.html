@@ -3,40 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Babu's Resume</title>
+    <title>Your Name - Personal Website</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f9;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
             color: #333;
         }
+
+        /* Header Section */
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        /* Profile Section */
+        .profile-section {
+            display: flex;
+            justify-content: center;
+            margin-top: -50px;
+        }
+
         .profile-pic {
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
-            width: 150px;
-            height: 150px;
+            border: 5px solid #fff;
         }
-        .container {
-            margin-top: 20px;
+
+        /* About Section */
+        .about-section {
+            text-align: center;
+            padding: 50px 20px;
         }
-        .details {
-            font-size: 1.2em;
-            margin-top: 15px;
+
+        .about-section h2 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .about-section p {
+            font-size: 1.2rem;
+            color: #666;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background-color: #333;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-section p {
+            font-size: 1.1rem;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #ff6347;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-pic {
+                width: 150px;
+                height: 150px;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
         }
     </style>
 </head>
 <body>
 
-    <h1>Welcome to My Personal Website!</h1>
+    <!-- Header -->
+    <header>
+        <h1>Your Name</h1>
+        <p>Your Profession or Tagline</p>
+    </header>
 
-    <div class="container">
-        <img src="your-photo.png" alt="Your Photo" class="profile-pic">
-        <div class="details">
-            <p>Hello! My name is <strong>Babu T</strong>.</p>
-            <p>I am a passionate DevOps Engineer.</p>
-            <p>Welcome to my personal page where you can learn more about me.</p>
-        </div>
-    </div>
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <img src="your-photo.jpg" alt="Your Photo" class="profile-pic">
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <h2>About Me</h2>
+        <p>
+            Hello! I am <strong>Babu T</strong>, a passionate DevOps Engineer. 
+            I specialize in AWS, Terraform, Ansible, Docker and Kubernetes. I am always eager to take on new challenges.
+            I created this website to share my journey, showcase my work, and connect with like-minded individuals.
+        </p>
+        <p>
+            I have experience in AWS DevOps, and I enjoy working on projects that involve automating infrastructure, streamlining deployment processes, and ensuring continuous integration and continuous delivery (CI/CD) pipelines for scalable, secure, and high-performing cloud environments.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h2>Contact Me</h2>
+        <p>
+            Feel free to reach out to me if you'd like to connect, collaborate, or just say hello!
+        </p>
+        <p>
+            Email: <a href="mailto:babumadhan0670@gmail.com">babumadhan0670@gmail.com</a><br>
+            LinkedIn: <a href="https://www.linkedin.com/in/babu-sce" target="_blank">linkedin.com/in/babu-sce</a><br>
+            GitHub: <a href="https://github.com/babumadhan" target="_blank">github.com/babumadhan</a>
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Babu T. All Rights Reserved.</p>
+        <p>Designed with ❤️ by You.</p>
+    </footer>
 
 </body>
 </html>
